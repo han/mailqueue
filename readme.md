@@ -15,10 +15,12 @@ Configuration
 + Mail gem:
 
     Mail.defaults { delivery_method MailQueue::Beanstalk, :tube => 'rculosis' }
+    
 
 + Rails:
 
     ActionMailer::Base.delivery_method = MailQueue::Beanstalk
+    
 
 or, if you insist on changing the default options:
 
@@ -30,10 +32,10 @@ or, if you insist on changing the default options:
 
 
 options are:
-* :pri    priority, from 0 to 2^32, 0 being the highest, 65536 the default 
-* :ttr    time to run, default 120 (seconds)
-* :delay  how many seconds before the job is put on the ready queue (default 0)
-* :tube   tube name used on beanstalk, defaults to 'email.send'
++ :pri    priority, from 0 to 2^32, 0 being the highest, 65536 the default 
++ :ttr    time to run, default 120 (seconds)
++ :delay  how many seconds before the job is put on the ready queue (default 0)
++ :tube   tube name used on beanstalk, defaults to 'email.send'
 
 
 Worker
