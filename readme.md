@@ -13,9 +13,11 @@ Configuration
 -------------
 
 + Mail gem:
+
     Mail.defaults { delivery_method MailQueue::Beanstalk, :tube => 'rculosis' }
 
 + Rails:
+
     ActionMailer::Base.delivery_method = MailQueue::Beanstalk
 
 or, if you insist on changing the default options:
