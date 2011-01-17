@@ -8,7 +8,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["Han Kessels"]
   s.email       = ["han.kessels@gmail.com"]
-  s.homepage    = "github.com/han/mail_queue"
+  s.homepage    = "https://github.com/han/mailqueue"
   s.summary     = "Delivery method for Mail gem to deliver to a beanstalk queue"
   s.description = "Delivery method for Mail gem. Delivers mail to a beanstalk queue"
 
